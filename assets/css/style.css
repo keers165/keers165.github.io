@@ -34,6 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 .general-sub {
     font-family: "Exo";
     font-weight: 300;
+    padding: 15px;
 }
 
 .inline-block {
@@ -133,6 +134,7 @@ header {
 footer {
     min-height: 120px;
     margin: 0;
+    padding: 15px;
 }
 
 footer .cv-pdf i {
@@ -154,23 +156,22 @@ footer .cv-pdf i:hover {
     padding-bottom: 15px;
 }
 
-.social-links ul li a i {
+footer ul li a i {
     width: 32px;
     height: 32px;
-    padding:20px 0;
     border-radius: 50%;
-    color: #fafafa;
-    background-color: #8f8f8f;
+    padding: 10px;
     text-align: center;
     font-size: 13px;
     line-height: 7px;
-    transition: all 350ms ease-in-out;
-   -moz-transition: all 350ms ease-in-out;
-   -webkit-transition: all 350ms ease-in-out;
-   -o-transition: all 350ms ease-in-out;
+    background-color: #8f8f8f;
+    color: #fafafa;
+    -moz-transition: all 350ms ease-in-out;
+    -webkit-transition: all 350ms ease-in-out;
+    -o-transition: all 350ms ease-in-out;
 }
 
-.social-links ul li a i:hover {
+footer ul li a i:hover {
     background-color: #e84610;
 }
 
