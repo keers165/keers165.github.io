@@ -3,7 +3,7 @@
 
 /*--------------Colours-------------*/
 
-footer, .bg-color-name-title {
+.container-footer, .bg-color-name-title {
     background-color: #676767;
     color: #fafafa;
 }
@@ -19,6 +19,15 @@ footer, .bg-color-name-title {
 }
 .ul-menu-color-download {
    background-color: #FFFC41; 
+}
+
+.bg-color-three-reasons {
+    background-color: #ffffff;
+}
+
+.bg-color-personnel-info {
+    background-color: #B111FF;
+    color: #fafafa;
 }
 
 /*---------------Margins Padding Text----------------*/
@@ -44,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*---------------Header--------------*/
 
-header {
+.container-header {
     margin: 0;
 }
 
@@ -129,22 +138,87 @@ header {
     height: 120px;
 }
 
+/*-----------------Section--------------*/
+
+.container-section {
+    margin: 0;
+    
+}
+
+.row-table {
+    display: table;
+}
+
+.section-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/*-----------------Section Reasons--------------*/
+
+.three-reasons-icon {
+    color: #B111FF;
+    font-size: 26px;
+}
+
+.three-reasons-heading {
+    margin-bottom: 15px;
+}
+
+/*-----------------Section Personnel Info--------------*/
+
+.personnel-info-item {
+    margin-bottom: 20px;
+    display: block;
+    clear: both;
+}
+
+.personnel-info-item .key,
+.personnel-info-item .value {
+    padding-right: 8px;
+}
+
+.personnel-info-item .key p,
+.personnel-info-item .value p {
+    margin: 0;
+}
+
+.personnel-info-item .key {
+    display: inline-block;
+    width: 30%;
+    margin-right: 21px;
+    padding-top: 2px;
+    vertical-align: top;
+}
+
+.personnel-info-item .key {
+    font-weight: 700;
+}
+
+.personnel-info-item .value {
+    display: inline-block;
+    position: relative;
+    width: 60%;
+}
+
 /*-----------------Footer--------------*/  
 
-footer {
+.container-footer {
     min-height: 120px;
     margin: 0;
     padding: 15px;
 }
 
-footer .cv-pdf i {
+.container-footer .cv-pdf i {
     color: #fafafa;
     text-align: center;
     font-size: 18px;
     padding-left: 5px;
 }
 
-footer .cv-pdf i:hover {
+.container-footer .cv-pdf i:hover {
    color: #e84610;
    transition: all 350ms ease-in-out;
    -moz-transition: all 350ms ease-in-out;
@@ -156,7 +230,7 @@ footer .cv-pdf i:hover {
     padding-bottom: 15px;
 }
 
-footer ul li a i {
+.container-footer ul li a i {
     width: 32px;
     height: 32px;
     border-radius: 50%;
@@ -171,10 +245,18 @@ footer ul li a i {
     -o-transition: all 350ms ease-in-out;
 }
 
-footer ul li a i:hover {
+.container-footer ul li a i:hover {
     background-color: #e84610;
 }
 
 #footer-details {
     margin: 20px;
+}
+
+@media(min-width:992px) {
+.section-column {
+    padding: 0 30px 30px;
+    float: none;
+    display: table-cell;
+}
 }
